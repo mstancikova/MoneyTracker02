@@ -83,7 +83,6 @@ namespace MoneyTracker02
                 db.DeleteTableGroups(groups);
                 Clear();
                 LoadData();
-
             };
 
             listgroups.ItemClick += (s, e) => {
@@ -117,7 +116,6 @@ namespace MoneyTracker02
             lstSource = db.SelectTableGroups();
             var adapter = new GroupListViewAdapter(this, lstSource);
             listgroups.Adapter = adapter;
-            //listviewgroups.ItemClick += ListViewGroups_ItemClick;
         }
     }
 }

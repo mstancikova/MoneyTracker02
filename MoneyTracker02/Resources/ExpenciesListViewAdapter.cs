@@ -18,6 +18,7 @@ namespace MoneyTracker02.Resources
 {
     public class ViewHolderExpencies : Java.Lang.Object
     {
+        public TextView TxtExpid { get; set; }
         public TextView TxtExpdata { get; set; }
         public TextView TxtExpgroup { get; set; }
         public TextView TxtExpbank { get; set; }
@@ -57,6 +58,7 @@ namespace MoneyTracker02.Resources
         {
             var view = convertView ?? activity.LayoutInflater.Inflate(Resource.Layout.list_view_Expencies, parent, false);
 
+            var txtExpid = view.FindViewById<TextView>(Resource.Id.txtExpid);
             var txtExpdate = view.FindViewById<TextView>(Resource.Id.txtExpdate);
             var txtExpgroup = view.FindViewById<TextView>(Resource.Id.txtExpgroup);
             var txtExpbank = view.FindViewById<TextView>(Resource.Id.txtExpbank);
@@ -65,6 +67,7 @@ namespace MoneyTracker02.Resources
             DataBase db = new DataBase();
             db.CreateDataBase();
 
+            txtExpid.Text = Convert.ToString(lstExpencies[position].Id);
             txtExpdate.Text = lstExpencies[position].Expdate;
             txtExpgroup.Text = db.GetGroupnameById(lstExpencies[position].GroupsId);
             txtExpbank.Text = db.GetBanknameById(lstExpencies[position].BanksId);

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MoneyTracker02.MoneyTracker02" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="21" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:allowBackup="true" android:label="0-MoneyTracker" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="Banks" android:name="md5072974a7d15298b4974d31cc3a6a59c9.BanksActivity" />
+    <activity android:label="Expencies" android:name="md5072974a7d15298b4974d31cc3a6a59c9.ExpenciesActivity" />
+    <activity android:label="Add new expence" android:name="md5072974a7d15298b4974d31cc3a6a59c9.ExpenciesAddActivity" />
+    <activity android:label="Edit Expence" android:name="md5072974a7d15298b4974d31cc3a6a59c9.ExpenciesEditActivity" />
+    <activity android:label="Groups" android:name="md5072974a7d15298b4974d31cc3a6a59c9.GroupsActivity" />
+    <activity android:label="MoneyTracker02" android:name="md5072974a7d15298b4974d31cc3a6a59c9.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="MoneyTracker02.MoneyTracker02.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.MoneyTracker02.MoneyTracker02" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

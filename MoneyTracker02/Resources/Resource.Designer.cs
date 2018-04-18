@@ -47,32 +47,38 @@ namespace MoneyTracker02
 			// aapt resource value: 0x7f040003
 			public const int btnAddBank = 2130968579;
 			
-			// aapt resource value: 0x7f04000f
-			public const int btnAddGroup = 2130968591;
+			// aapt resource value: 0x7f040017
+			public const int btnAddGroup = 2130968599;
 			
-			// aapt resource value: 0x7f04001d
-			public const int btnBanks = 2130968605;
+			// aapt resource value: 0x7f040026
+			public const int btnBanks = 2130968614;
 			
 			// aapt resource value: 0x7f040005
 			public const int btnDeleteBank = 2130968581;
 			
-			// aapt resource value: 0x7f040011
-			public const int btnDeleteGroup = 2130968593;
+			// aapt resource value: 0x7f040019
+			public const int btnDeleteGroup = 2130968601;
+			
+			// aapt resource value: 0x7f040015
+			public const int btnEExpdelete = 2130968597;
+			
+			// aapt resource value: 0x7f040014
+			public const int btnEExpedit = 2130968596;
 			
 			// aapt resource value: 0x7f040004
 			public const int btnEditBank = 2130968580;
 			
-			// aapt resource value: 0x7f040010
-			public const int btnEditGroup = 2130968592;
+			// aapt resource value: 0x7f040018
+			public const int btnEditGroup = 2130968600;
 			
 			// aapt resource value: 0x7f040007
 			public const int btnExpadd = 2130968583;
 			
-			// aapt resource value: 0x7f04001b
-			public const int btnExpencies = 2130968603;
+			// aapt resource value: 0x7f040024
+			public const int btnExpencies = 2130968612;
 			
-			// aapt resource value: 0x7f04001c
-			public const int btnGroups = 2130968604;
+			// aapt resource value: 0x7f040025
+			public const int btnGroups = 2130968613;
 			
 			// aapt resource value: 0x7f040000
 			public const int edtBankdate = 2130968576;
@@ -83,6 +89,18 @@ namespace MoneyTracker02
 			// aapt resource value: 0x7f040001
 			public const int edtBankname = 2130968577;
 			
+			// aapt resource value: 0x7f04000f
+			public const int edtEExpdate = 2130968591;
+			
+			// aapt resource value: 0x7f04000e
+			public const int edtEExpid = 2130968590;
+			
+			// aapt resource value: 0x7f040012
+			public const int edtEExpmoney = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int edtEExpnote = 2130968595;
+			
 			// aapt resource value: 0x7f040009
 			public const int edtExpdate = 2130968585;
 			
@@ -92,8 +110,8 @@ namespace MoneyTracker02
 			// aapt resource value: 0x7f04000d
 			public const int edtExpnote = 2130968589;
 			
-			// aapt resource value: 0x7f04000e
-			public const int edtGroupname = 2130968590;
+			// aapt resource value: 0x7f040016
+			public const int edtGroupname = 2130968598;
 			
 			// aapt resource value: 0x7f040006
 			public const int listBanks = 2130968582;
@@ -101,8 +119,14 @@ namespace MoneyTracker02
 			// aapt resource value: 0x7f040008
 			public const int listExpencies = 2130968584;
 			
-			// aapt resource value: 0x7f040012
-			public const int listGroups = 2130968594;
+			// aapt resource value: 0x7f04001a
+			public const int listGroups = 2130968602;
+			
+			// aapt resource value: 0x7f040011
+			public const int spinnerEExpbanks = 2130968593;
+			
+			// aapt resource value: 0x7f040010
+			public const int spinnerEExpgroup = 2130968592;
 			
 			// aapt resource value: 0x7f04000b
 			public const int spinnerExpbanks = 2130968587;
@@ -110,38 +134,41 @@ namespace MoneyTracker02
 			// aapt resource value: 0x7f04000a
 			public const int spinnerExpgroup = 2130968586;
 			
-			// aapt resource value: 0x7f040014
-			public const int txtBankdate = 2130968596;
+			// aapt resource value: 0x7f04001c
+			public const int txtBankdate = 2130968604;
 			
-			// aapt resource value: 0x7f040015
-			public const int txtBankmoney = 2130968597;
+			// aapt resource value: 0x7f04001d
+			public const int txtBankmoney = 2130968605;
 			
-			// aapt resource value: 0x7f040013
-			public const int txtBankname = 2130968595;
+			// aapt resource value: 0x7f04001b
+			public const int txtBankname = 2130968603;
 			
-			// aapt resource value: 0x7f040018
-			public const int txtExpbank = 2130968600;
-			
-			// aapt resource value: 0x7f040016
-			public const int txtExpdate = 2130968598;
-			
-			// aapt resource value: 0x7f040017
-			public const int txtExpgroup = 2130968599;
-			
-			// aapt resource value: 0x7f040019
-			public const int txtExpmoney = 2130968601;
-			
-			// aapt resource value: 0x7f04001a
-			public const int txtGroupname = 2130968602;
+			// aapt resource value: 0x7f040021
+			public const int txtExpbank = 2130968609;
 			
 			// aapt resource value: 0x7f04001f
-			public const int txtSpinnerBankmoney = 2130968607;
-			
-			// aapt resource value: 0x7f04001e
-			public const int txtSpinnerBankname = 2130968606;
+			public const int txtExpdate = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int txtSpinnerGroupname = 2130968608;
+			public const int txtExpgroup = 2130968608;
+			
+			// aapt resource value: 0x7f04001e
+			public const int txtExpid = 2130968606;
+			
+			// aapt resource value: 0x7f040022
+			public const int txtExpmoney = 2130968610;
+			
+			// aapt resource value: 0x7f040023
+			public const int txtGroupname = 2130968611;
+			
+			// aapt resource value: 0x7f040028
+			public const int txtSpinnerBankmoney = 2130968616;
+			
+			// aapt resource value: 0x7f040027
+			public const int txtSpinnerBankname = 2130968615;
+			
+			// aapt resource value: 0x7f040029
+			public const int txtSpinnerGroupname = 2130968617;
 			
 			static Id()
 			{
@@ -166,25 +193,28 @@ namespace MoneyTracker02
 			public const int ExpenciesAdd = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Groups = 2130837507;
+			public const int ExpenciesEdit = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int list_view_Banks = 2130837508;
+			public const int Groups = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int list_view_Expencies = 2130837509;
+			public const int list_view_Banks = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int list_view_Groups = 2130837510;
+			public const int list_view_Expencies = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int Main = 2130837511;
+			public const int list_view_Groups = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int spinner_list_Banks = 2130837512;
+			public const int Main = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int spinner_list_Groups = 2130837513;
+			public const int spinner_list_Banks = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int spinner_list_Groups = 2130837514;
 			
 			static Layout()
 			{

@@ -5,12 +5,26 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TextView
-        android:text="Data"
-        android:layout_width="match_parent"
+    <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+      <TextView
+        android:text="Id"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtExpdate"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:id="@+id/txtExpid"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"/>
+      <TextView
+          android:text="Data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtExpdate"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -33,7 +47,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtExpmoney"
-            android:inputType="numberDecimal"
             android:layout_weight="1"
             android:gravity="right"
             android:layout_marginRight="5dp" />

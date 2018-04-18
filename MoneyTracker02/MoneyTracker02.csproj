@@ -85,6 +85,7 @@
     <Compile Include="BanksActivity.cs" />
     <Compile Include="ExpenciesActivity.cs" />
     <Compile Include="ExpenciesAddActivity.cs" />
+    <Compile Include="ExpenciesEditActivity.cs" />
     <Compile Include="GroupsActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\BanksListViewAdapter.cs" />
@@ -130,6 +131,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\spinner_list_Banks.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ExpenciesEdit.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

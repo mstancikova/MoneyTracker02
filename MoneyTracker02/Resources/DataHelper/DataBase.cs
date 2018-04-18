@@ -278,7 +278,7 @@ namespace MoneyTracker02.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(Path.Combine(folderPath, database_name)))
                 {
-                    connection.Query<Banks>("UPDATE Expencies SET Expdate=?, GroupsGroupname=?, BanksBankname=?, Expmoney=? WHERE Id=?", exp.Expdate, exp.GroupsId, exp.BanksId, exp.Expmoney, exp.Id);
+                    connection.Query<Expencies>("UPDATE Expencies SET Expdate=?, GroupsGroupname=?, BanksBankname=?, Expmoney=?, Expnote=? WHERE Id=?", exp.Expdate, exp.GroupsId, exp.BanksId, exp.Expmoney, exp.Expnote, exp.Id);
                     return true;
                 }
             }
@@ -296,6 +296,23 @@ namespace MoneyTracker02.Resources.DataHelper
                 using (var connection = new SQLiteConnection(Path.Combine(folderPath, database_name)))
                 {
                     connection.Delete(exp);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteTableExpenciesWhereId(int Id)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(Path.Combine(folderPath, database_name)))
+                {
+                    connection.Query<Banks>("DELETE * FROM Expencies WHERE Id=?", Id);
                     return true;
                 }
             }

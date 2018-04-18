@@ -52,27 +52,20 @@ namespace MoneyTracker02
 
         private void Lstexpencies_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            try
+            for (int i = 0; i < lstexpencies.Count; i++)
             {
-                for (int i = 0; i<lstexpencies.Count; i++)
+                if (e.Position == i)
                 {
-                    if (e.Position == i)
-                    {
-                        lstexpencies.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.DarkCyan);
-                    }
-                    else
-                        lstexpencies.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.Transparent);
-                    }
+                    lstexpencies.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.DarkCyan);
+                    //Console.WriteLine("Clicked item id: " + e.View.FindViewById<TextView>(Resource.Id.txtExpid).Text);
 
-                //binding data
-                /*var txtExpdate = e.View.FindViewById<TextView>(Resource.Id.txtExpdate);
-                var txtExpgroup = e.View.FindViewById<TextView>(Resource.Id.txtExpgroup);
-                var txtExpbank = e.View.FindViewById<TextView>(Resource.Id.txtExpbank);
-                var txtExpmoney = e.View.FindViewById<TextView>(Resource.Id.txtExpmoney);*/
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Expencies Activity: ", ex.Message);
+                    var activity = new Intent(this, typeof(ExpenciesEditActivity));
+                    activity.PutExtra("ExpId", e.View.FindViewById<TextView>(Resource.Id.txtExpid).Text);
+                    StartActivity(activity);
+
+                }
+                else
+                    lstexpencies.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.Transparent);
             }
         }
 
