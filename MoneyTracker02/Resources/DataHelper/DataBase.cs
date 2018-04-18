@@ -329,7 +329,7 @@ namespace MoneyTracker02.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(Path.Combine(folderPath, database_name)))
                 {
-                    connection.Query<Banks>("SELECT * FROM Expencies WHERE Id=?", Id);
+                    connection.Query<Expencies>("SELECT * FROM Expencies WHERE Id=?", Id);
                     return true;
                 }
             }

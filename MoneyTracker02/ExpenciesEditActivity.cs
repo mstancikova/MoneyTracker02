@@ -21,7 +21,7 @@ namespace MoneyTracker02
     [Activity(Label = "Edit Expence")]
     public class ExpenciesEditActivity : Activity
     {
-        EditText /*edteexpid,*/ edteexpdate, edteexpmoney, edteexpnote;
+        EditText edteexpid, edteexpdate, edteexpmoney, edteexpnote;
         Spinner spnnreexpgroup, spnnreexpbank;
         Button btneexpedit, btneexpdelete;
         DataBase db;
@@ -43,7 +43,8 @@ namespace MoneyTracker02
 
             LoadData();
 
-            //edteexpid = FindViewById<EditText>(Resource.Id.edtEExpid);
+            edteexpid = FindViewById<EditText>(Resource.Id.edtEExpid);
+            edteexpid.Text = eexpid;
             edteexpdate = FindViewById<EditText>(Resource.Id.edtEExpdate);
             spnnreexpgroup = FindViewById<Spinner>(Resource.Id.spinnerEExpgroup);
             spnnreexpbank = FindViewById<Spinner>(Resource.Id.spinnerEExpbanks);
